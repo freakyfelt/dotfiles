@@ -27,6 +27,9 @@ set mouse=a             " enable mouse for all modes
 set ttymouse=xterm2
 
 " }}}
+" Clipboard {{{
+set clipboard=unnamed   " use the system clipboard
+" }}}
 " Search {{{
 set showmatch           " highlight matching [{()}]
 set incsearch           " search as characters are entered
