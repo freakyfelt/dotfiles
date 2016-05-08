@@ -59,6 +59,8 @@ nnoremap E $
 let mapleader=","       " leader is comma
 inoremap jk <esc>       " jk is escape
 
+set backspace=2 " make backspaces work like most other apps
+
 " }}}
 " AutoGroups {{{
 
