@@ -45,4 +45,7 @@ plugins=(rails git lighthouse)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$PATH:/Users/bfelt/.rvm/gems/ruby-2.0.0-p247/bin:/Users/bfelt/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/bfelt/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/bfelt/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
+export PATH=$PATH:$HOME/bin
+
+## Begin RBENV
+  if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
