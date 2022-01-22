@@ -56,3 +56,16 @@ export PATH=$PATH:$HOME/bin
 
 ## Begin RBENV
   if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
+
+  autoload -Uz compinit
+  compinit
+fi
+
+alias timestamp="date +%Y%m%d%H%M%S"
+
+# Do not barf on HEAD^
+setopt NO_NOMATCH
+
